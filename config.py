@@ -36,7 +36,7 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "999"))
 COOKIE_URL = getenv("COOKIE_URL", "https://pastebin.com/Q0keyBc0")  # required (paste link)
 API_URL = getenv("API_URL", "https://api.thequickearn.xyz")        # optional
 VIDEO_API_URL = getenv("VIDEO_API_URL", "https://api.video.thequickearn.xyz")  # optional
-API_KEY = getenv("API_KEY", "https://pastebin.com/Q0keyBc0")        # optional
+API_KEY = getenv("API_KEY", "NxGBNexGenBots66dc83s")        # optional
 
 # ───── Heroku Configuration ───── #
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
