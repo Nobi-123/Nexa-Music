@@ -1,4 +1,4 @@
-# Authored By Certified Coders — v1.2 (2025-11-14)
+# Authored By Certified Coders â€” v1.2 (2025-11-14)
 from pyrogram import Client
 
 import config
@@ -9,11 +9,8 @@ assistants = []
 assistantids = []
 
 GROUPS_TO_JOIN = [
-    "CertifiedDiscussion",
-    "CertifiedCoders",
-    "CertifiedCodes",
-    "CertifiedDevs",
-    "CertifiedNetwork",
+    "NexaMeetup",
+    "NexaCoders",
 ]
 
 
@@ -21,14 +18,14 @@ GROUPS_TO_JOIN = [
 class Userbot:
     def __init__(self):
         self.one = Client(
-            "TuneAssis1",
+            "NexaAssis1",
             config.API_ID,
             config.API_HASH,
             session_string=str(config.STRING1),
             no_updates=True,
         )
         self.two = Client(
-            "TuneAssis2",
+            "NexaAssis2",
             config.API_ID,
             config.API_HASH,
             session_string=str(config.STRING2),
@@ -79,7 +76,7 @@ class Userbot:
 
             try:
                 await client.send_message(
-                    config.LOGGER_ID, f"Tune's Assistant {index} Started"
+                    config.LOGGER_ID, f" Assistant {index} Started"
                 )
             except Exception:
                 LOGGER(__name__).error(
@@ -97,7 +94,7 @@ class Userbot:
             LOGGER(__name__).error(f"Failed to start Assistant {index}: {e}")
 
     async def start(self):
-        LOGGER(__name__).info("Starting Tune's Assistants...")
+        LOGGER(__name__).info("Starting Assistants...")
         await self.start_assistant(self.one, 1)
         await self.start_assistant(self.two, 2)
         await self.start_assistant(self.three, 3)
